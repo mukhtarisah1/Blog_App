@@ -89,6 +89,16 @@
             <div class="container">
                 @include('messages')
                 @yield('content')
+                <footer class="text-muted">
+                        <div>
+                                <hr/>
+                          <p class="float-right">
+                            
+                            <a href="#">Back to top</a>
+                          </p>
+                          <p>Blog Application example is &copy; lattice-inc, you can download customize and use as you wish  </p>
+                          <p>Use this app for your educational and other needs applicable, cheers.</p>
+                        </div>
             </div>
         </main>
     </div>

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <h1 class="text-center"><i>ALL RECENT POSTS</i></h1>
+    <h1 class="text-center">ALL RECENT POSTS</h1>
+    <hr/>
     @if(count($posts) > 0)
         @foreach($posts as $post)
         <div class="row">
@@ -20,10 +21,13 @@
             <br/> 
         @endforeach
         {{$posts->links()}}
+        <hr/>
     @else
             <h2>No posts found</h2>
     @endif
     @if(!Auth::guest())
-    <a href="/posts/create" class="btn btn-success float-right">Add Post</a>
+    <div class="">
+        <a href="/posts/create" class="btn btn-success">Add Post</a>
+    </div>
     @endif
 @endsection
